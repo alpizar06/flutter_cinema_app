@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  card_swiper:
+    dependency: "direct main"
+    description:
+      name: card_swiper
+      sha256: af5b58b582ad690c5002097404ab83fa604b8cb59b04384a5325ea485d9840f0
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   characters:
     dependency: transitive
     description:
@@ -186,3 +194,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.19.0 <4.0.0"
+  flutter: ">=0.1.4"
