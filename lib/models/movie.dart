@@ -42,6 +42,15 @@ class Movie {
 
       return 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWhY8BYsKTET0zNi23pNaGCQ-hbS8hvmcuw&s';
     }
+    
+    get fullBackDropPath{
+
+      if(this.posterPath != null) {
+        return 'https://image.tmdb.org/t/p/w500${this.backdropPath}';
+      }
+
+      return 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTWhY8BYsKTET0zNi23pNaGCQ-hbS8hvmcuw&s';
+    }
 
     factory Movie.fromRawJson(String str) => Movie.fromJson(json.decode(str));
 
